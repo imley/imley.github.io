@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>Firefox支付宝插件安装问题的解决 | Ley's blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/d1e6a92d41.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="http://blog.imley.net/theme/css/main.css" type="text/css" />
+  <link href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ley's blog Atom Feed" />
+ 
+</head>
+<body id="index">
+<section id="wrapper" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blog.imley.net/" title="后知后觉">
+          Ley's blog
+        </a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="header-navbar-collpase">
+      <ul class="nav navbar-nav">
+            <li><a href="http://blog.imley.net/about">关于</a></li>
+            <li><a href="http://blog.imley.net/msg-board">留言版</a></li>
+          <li><a href="http://blog.imley.net/archives.html">Archives</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="http://blog.imley.net/category/chao-xi-zuo-wen.html">抄袭作文</a></li>
+              <li class="active"><a href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></li>
+              <li><a href="http://blog.imley.net/category/xiao-xue-zuo-wen.html">小学作文</a></li>
+              <li><a href="http://blog.imley.net/category/za-wen.html">杂文</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/imley">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weibo.com/imley">
+            <i class="fa fa-weibo" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+<aside id="sidebar" class="col-xs-12 col-md-3">
+<!--Left Blank-->
+</aside>
+    <div id="content" class="col-xs-12 col-md-8">
+<article class="entry-content"> 
+  <header>
+    <h1 class="entry-title">Firefox支付宝插件安装问题的解决</h1>
+<div class="post-info">
+  <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="entry-date"> 2009-05-09 Saturday</span>, <i class="fa fa-user-circle" aria-hidden="true"></i> <a class="author" href="http://blog.imley.net/author/ley.html">Ley</a>, <i class="fa fa-folder-o" aria-hidden="true"></i> <a class="entry-cat" href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></p>
+  </p> 
+<i class="fa fa-tags"></i><span class="entry-tags">  <a href="http://blog.imley.net/tag/firefox">firefox</a>   <a href="http://blog.imley.net/tag/插件">插件</a>   <a href="http://blog.imley.net/tag/支付宝">支付宝</a>   <a href="http://blog.imley.net/tag/网络">网络</a>  </span>
+</div><!-- /.post-info -->  </header>
+
+  <div class="entry-content">
+    <p><img alt="" src="https://img.alipay.com/images/cms2/200902/20090212536919.gif"><img alt="" src="http://www.mozilla.com/img/tignish/about/logo/download/logo-wordmark-version-preview.png"></p>
+<p>首先，在本文开始之前，先向伟大的<a href="http://www.neoease.com">mg12</a>致敬，是他的<a href="http://www.neoease.com/install-aliply-plugin-into-firefox/">这篇文章</a>，解开了困扰我长达一两天的一个问题。</p>
+<p><strong>问题起因</strong>：</p>
+<p>由于本人前两天买了块硬盘，于是重做了系统，于是也重装了firefox，但是装上firefox之后，不是特别稳定，于是卸载了又重装了一下（看似废话，其实这里是<strong><span style="color: #ff00ff;">伏笔</span></strong>）。</p>
+</p>
+
+<p>问题就是，前天还是昨天的时候，想上淘宝充话费，于是习惯性地打开FF，输入<a href="http://taobao.com">taobao.com</a>，然后再搞定买卖手续后发现：没有装支付宝插件。不过很好解决啊，下载了淘宝提示的<a href="https://img.alipay.com/download/aliedit/npaliedit.exe">非IE插件</a>，然后关掉FF，安装完打开FF，准备付钱之时，发现支付宝还不能登陆。于是我以为是FF关得不够长，于是又关了它一分多钟，再装。事实证明这种唯心的，不科学的方法是解决不了问题的...</p>
+</p>
+
+<p><strong>问题的初步解决</strong>：</p>
+<p>我的方法很没有意思，下载了一个<a href="http://pack.google.com/intl/zh-cn/pack_installer.html?hl=zh-cn">Chrome</a>，然后给它装了插件（方法同firefox，那个安装包是很多浏览器通吃的）。真的不能怪我，我也急着交话费，迟了连动态口令都收不到了。</p>
+</p>
+
+<p><strong>问题的彻底解决</strong>：<!--more--></p>
+<p>这里就真的要感谢neoease了，今天上他的博客，本来是无聊逛逛，不料发现他不久以前写的一篇“<a href="http://www.neoease.com/install-aliply-plugin-into-firefox/">手动为
+Firefox
+添加支付宝安全插件</a>”（还好它还在首页，不然我真的看不见了），他提到支付宝插件的安装实际是在
+Windows 注册表中找到系统上的浏览器路径, 然后把插件安装到浏览器相应目录。</p>
+</p>
+
+<p>然后它提到，可以手动提取安装包里面的"npaliedit.dll"到firefox的plugin目录。这对我来说太好办了，我都不用提取，直接从chrome的plugin目录(我的是"Users\XXX\AppData\Local\Google\Chrome\Application\Plugins")拷了一个过来。放到firefox目录下，久违的密码输入窗口又出现啦\~嗯，问题完美解决，赶紧给人家<a href="http://www.neoease.com/install-aliply-plugin-into-firefox/#comment-13064">道谢</a>\~</p>
+</p>
+
+<p><strong>问题的分析</strong>：</p>
+<p>既然问题解决了，何不估一回“事后诸葛亮”呢，既然mg12说是调用了注册表以后找到安装位置的，会不会是插件插件安装包把位置找错了\~\~这里就涉及到前面的一个<span style="color: #ff00ff;"><strong>伏笔</strong></span>啦，因为我重装系统后，装了firefox又卸载了再装的，第一次是在d盘，第二次是在c盘，我赶紧到d盘曾经装过firefox的目录去查看，果然，插件被安装到了这里。</p>
+</p>
+
+<p>就此，我分析一下问题的产生的原因，可能是我在第一次卸载firefox的时候，并没有选择完全卸载而是保留一些用户数据。不过我查找了数据表里面和firefox有关的键值，也没有找到原来d盘的相关信息，至于支付宝是怎么找到的，我就懒得探究啦。</p>
+</p>
+
+<p>嗯，这个故事到这里算是结束了，和我一样出现这个问题的可能性可能是非常非常小的，但是，从这个故事中，我们学会，万一遇到了问题，瞎掰是弄不清的，最好是Google一下，或者，逛别人的<a href="http://feed.feedsky.com/imley" title="rss我吧">博客</a>\~;-)</p>
+<p><em>本文来自<a href="../" title="Ley's Blog">Ley’s Blog</a>，转载请注明出处。</em></p>
+<p></p>
+[ad#post-end]</p>
+  </div>
+
+  <p class="permalink"><i class="fa fa-link" aria-hidden="true"></i> Permalink to this post: <a title="Firefox支付宝插件安装问题的解决"href="http://blog.imley.net/2009/05/09/add-alipay-plugin-for-firefox/">http://blog.imley.net/2009/05/09/add-alipay-plugin-for-firefox/</a></p>
+</article>
+
+<section id="entry-comments">
+  <h1><i class="fa fa-comments" aria-hidden="true"></i> Comments</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "2009/05/09/add-alipay-plugin-for-firefox/";
+    var disqus_url = "http://blog.imley.net/2009/05/09/add-alipay-plugin-for-firefox/";
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://imley.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</section>
+    </div>
+    <div class="col-xs-12 col-md-1"></div>
+
+  </div>
+
+  <footer id="footer" class="row">
+  <div class="col-md-3">
+  <p><i class="fa fa-gears" aria-hidden="true"></i> Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p><i class="fa fa-asterisk" aria-hidden="true"></i> This theme <em>April Jane</em> is by <a href="http://blog.imley.net/2013/02/20/april-jane/">me</a></p>
+  </div>
+  <section class="col-md-6">
+  <ul class="list-inline">
+    <i class="fa fa-terminal"> Blogrool: </i>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://www.cnblogs.com/haippy/">海平同学</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://python.org">Python.org</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://jinja.pocoo.org">Jinja2</a>
+    </li>
+  </section>
+  </footer>
+</section>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8371634-14', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

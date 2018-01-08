@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>EC2上配置IPV6 | Ley's blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/d1e6a92d41.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="http://blog.imley.net/theme/css/main.css" type="text/css" />
+  <link href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ley's blog Atom Feed" />
+ 
+</head>
+<body id="index">
+<section id="wrapper" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blog.imley.net/" title="后知后觉">
+          Ley's blog
+        </a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="header-navbar-collpase">
+      <ul class="nav navbar-nav">
+            <li><a href="http://blog.imley.net/about">关于</a></li>
+            <li><a href="http://blog.imley.net/msg-board">留言版</a></li>
+          <li><a href="http://blog.imley.net/archives.html">Archives</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="http://blog.imley.net/category/chao-xi-zuo-wen.html">抄袭作文</a></li>
+              <li class="active"><a href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></li>
+              <li><a href="http://blog.imley.net/category/xiao-xue-zuo-wen.html">小学作文</a></li>
+              <li><a href="http://blog.imley.net/category/za-wen.html">杂文</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/imley">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weibo.com/imley">
+            <i class="fa fa-weibo" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+<aside id="sidebar" class="col-xs-12 col-md-3">
+<!--Left Blank-->
+</aside>
+    <div id="content" class="col-xs-12 col-md-8">
+<article class="entry-content"> 
+  <header>
+    <h1 class="entry-title">EC2上配置IPV6</h1>
+<div class="post-info">
+  <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="entry-date"> 2011-11-21 Monday</span>, <i class="fa fa-user-circle" aria-hidden="true"></i> <a class="author" href="http://blog.imley.net/author/ley.html">Ley</a>, <i class="fa fa-folder-o" aria-hidden="true"></i> <a class="entry-cat" href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></p>
+  </p> 
+<i class="fa fa-tags"></i><span class="entry-tags">  <a href="http://blog.imley.net/tag/ec2">ec2</a>   <a href="http://blog.imley.net/tag/ipv6">ipv6</a>   <a href="http://blog.imley.net/tag/amazon">amazon</a>  </span>
+</div><!-- /.post-info -->  </header>
+
+  <div class="entry-content">
+    <p>前两天弄了这台主机以后，就发现连接速度那是相当慢啊——于是，终于忍不住的我，今天把服务器换到了东京机房——不过这是后话了...</p>
+<p>为了让学校访问能够快一些，我决定给EC2主机打一个隧道，上IPV6，经过反复试验，最后得到较为成功的解决方案如下：</p>
+<h2>第一步：隧道申请：</h2>
+<p></p>
+​1. 到he.net的<a href="http://tunnelbroker.net/">免费隧道</a>申请页面注册用户，申请成功以后密码发到邮箱；</p>
+<p>​2. 登陆后选择“<a href="http://tunnelbroker.net/new_tunnel.php?type=bgp">Create BGP Tunnel</a>”，申请隧道：</p>
+<p>Endpoit就填你申请的EC2的静态地址；</p>
+</p>
+
+<p>服务器的话，视情况选择吧，我选的日本，其实我觉得Hongkong应该也不错；</p>
+<p></p>
+​3. 创建成功以后，会显示隧道信息，点击“Example
+Configuration”出现配置指南，我使用的是“Linux-net-tools”；</p>
+<h2>二、配置隧道：</h2>
+<p></p>
+​1.
+这一步实在是很简单，把上一步得到的脚本存到某个脚本文件，例如set_v6.sh；</p>
+<p>​2. 然后这样子：</p>
+<p>
+~~~~ {.brush:shell}
+sudo sh set_v6.sh #太坑爹了
+~~~~
+
+</p>
+
+<p>​3.
+当然，你也可以把这个加入系统启动脚本，或者把脚本里头的内容加入到网络配置文件里头去，这个就不表了；</p>
+<h2>三、One More Thing：</h2>
+<p></p>
+事情完了吗，没有...接下来的内容才是本文的重点：</p>
+<p>首先，he.net是通过ICMP协议确认客户端状态的，所以，你需要保证他们的服务器能够ping通你。但是亚马逊似乎给系统加了某种特别的防火墙规则，尽管我在防火墙里头允许了he.net服务器的IP，但是有时还是会出现ping不通的问题。</p>
+<p>经过搜索和观察，发现当从EC2主机发出V6的ping请求（不管是ping谁）时，外面在大致10分钟以内可以ping进来，于是，我的终极解决方案便是：</p>
+<p>把 <strong>ping6 -c 2
+ipv6.google.com</strong>加入到了crontab里头，虽然坑爹，但是经过测试，有效。</p>
+<p>本文到此结束。</p>
+<p>本文在一定程度上参考了这篇文章：<a href="">http://benctechnicalblog.blogspot.com/2011/01/ipv6-in-amazon-ec2.html</a></p>
+<div class="highlight"><pre><span></span>http://benctechnicalblog.blogspot.com/2011/01/ipv6-in-amazon-ec2.html
+</pre></div>
+  </div>
+
+  <p class="permalink"><i class="fa fa-link" aria-hidden="true"></i> Permalink to this post: <a title="EC2上配置IPV6"href="http://blog.imley.net/2011/11/21/deploy-ipv6-on-ec2-instance/">http://blog.imley.net/2011/11/21/deploy-ipv6-on-ec2-instance/</a></p>
+</article>
+
+<section id="entry-comments">
+  <h1><i class="fa fa-comments" aria-hidden="true"></i> Comments</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "2011/11/21/deploy-ipv6-on-ec2-instance/";
+    var disqus_url = "http://blog.imley.net/2011/11/21/deploy-ipv6-on-ec2-instance/";
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://imley.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</section>
+    </div>
+    <div class="col-xs-12 col-md-1"></div>
+
+  </div>
+
+  <footer id="footer" class="row">
+  <div class="col-md-3">
+  <p><i class="fa fa-gears" aria-hidden="true"></i> Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p><i class="fa fa-asterisk" aria-hidden="true"></i> This theme <em>April Jane</em> is by <a href="http://blog.imley.net/2013/02/20/april-jane/">me</a></p>
+  </div>
+  <section class="col-md-6">
+  <ul class="list-inline">
+    <i class="fa fa-terminal"> Blogrool: </i>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://www.cnblogs.com/haippy/">海平同学</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://python.org">Python.org</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://jinja.pocoo.org">Jinja2</a>
+    </li>
+  </section>
+  </footer>
+</section>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8371634-14', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

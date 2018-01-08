@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>吐槽一下DISQUS的thread链接错误问题 | Ley's blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/d1e6a92d41.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="http://blog.imley.net/theme/css/main.css" type="text/css" />
+  <link href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ley's blog Atom Feed" />
+ 
+</head>
+<body id="index">
+<section id="wrapper" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blog.imley.net/" title="后知后觉">
+          Ley's blog
+        </a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="header-navbar-collpase">
+      <ul class="nav navbar-nav">
+            <li><a href="http://blog.imley.net/about">关于</a></li>
+            <li><a href="http://blog.imley.net/msg-board">留言版</a></li>
+          <li><a href="http://blog.imley.net/archives.html">Archives</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="http://blog.imley.net/category/chao-xi-zuo-wen.html">抄袭作文</a></li>
+              <li class="active"><a href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></li>
+              <li><a href="http://blog.imley.net/category/xiao-xue-zuo-wen.html">小学作文</a></li>
+              <li><a href="http://blog.imley.net/category/za-wen.html">杂文</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/imley">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weibo.com/imley">
+            <i class="fa fa-weibo" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+<aside id="sidebar" class="col-xs-12 col-md-3">
+<!--Left Blank-->
+</aside>
+    <div id="content" class="col-xs-12 col-md-8">
+<article class="entry-content"> 
+  <header>
+    <h1 class="entry-title">吐槽一下DISQUS的thread链接错误问题</h1>
+<div class="post-info">
+  <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="entry-date"> 2013-01-03 Thursday</span>, <i class="fa fa-user-circle" aria-hidden="true"></i> <a class="author" href="http://blog.imley.net/author/ley.html">Ley</a>, <i class="fa fa-folder-o" aria-hidden="true"></i> <a class="entry-cat" href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></p>
+  </p> 
+<i class="fa fa-tags"></i><span class="entry-tags">  <a href="http://blog.imley.net/tag/disqus">disqus</a>   <a href="http://blog.imley.net/tag/disqus_url">disqus_url</a>   <a href="http://blog.imley.net/tag/pelican">pelican</a>  </span>
+</div><!-- /.post-info -->  </header>
+
+  <div class="entry-content">
+    <h2>背景</h2>
+<h3>没有信息量的背景</h3>
+<p>事情得从前段时间我把博客从<a href="http://imley.net/2012/12/25/bye-wordpress/" title="Bye WordPress">WordPress</a>换到<a href="http://blog.imley.net/2012/12/25/hello-pelican/" title="Hello, Pelican">Pelican</a>开始说起。</p>
+<p>当时，一时头脑发热的我，告别了使用多年，人见人爱，花见花开的WordPress，转投比较小众的<a href="https://github.com/getpelican/pelican" title="ddd">Pelican</a>（我承认是受<a href="http://twitter.com/yegle" title="Yegle的博客">@yegle</a>的启发）。</p>
+<h3>信息量来了</h3>
+<p>Pelican是静态博客，如果需要评论的话，默认是用的<a href="http://disqus.com/" title="DISQUS">DISQUS</a>的评论服务。如果使用Pelican的notmyidea这个主题，在<code>pelicanconf.py</code>里头添上<code>DISQUS_SITENAME</code>字段，就可以使用DISQUS的评论服务了——很爽是吧。</p>
+<p>一开始我都没有意识到这个问题，直到有一天我的博客被评论了——我一看DISQUS给我的邮件。里头评论那个链接怎么指向的是<code>http://localhost:8000/slug/</code>这样的测试地址啊，简直是不能忍啊。于是，为了解决这个问题，我开始了艰难的求索之路。</p>
+<h2>失败的尝试</h2>
+<h3>试图修改URL</h3>
+<p>不是URL错了嘛，我改就是，于是从DISQUS的用户的角度出发，我进入了DISQUS的后台。找到了<code>Tools-&gt;Migrate Threads</code>这个选项卡。总之，我在尝试了上头所列的三种方式（"Domain Migration Wizard", "Upload a URL map", "Recirect Crawler"）之后，都无果…</p>
+<p>另外，这期间我认为DISQUS可能修改数据会有延时，等了好几天。总之，最后的结论就是，通过管理界面的工具，不靠谱。</p>
+<h3>试图调用DISQUS的API</h3>
+<p>在第一次尝试失败以后，我本着计算机系学生“应该写代码解决问题”的精神，展开了阅读DISQUS API并尝试写脚本解决该问题的工作。</p>
+<p>还好的是，<a href="http://disqus.com/api/docs/" title="DISQUS api docs">DISQUS的API文档</a>还算完善，也有<a href="https://github.com/disqus/disqus-python" title="DISQUS API bindings for Python">Python的API bindings</a>，事情的痛苦指数降低了一半。</p>
+<p>在艰难地获取了token以后，我开始写脚本并进行测试了。我用的是<code>Threads</code>对象的<code>update</code>方法，虽然<a href="http://disqus.com/api/docs/threads/update/" title="DISQUS thread update api">文档页面</a>上头写明了:</p>
+<blockquote>
+<p><strong>this method is currently under development and subject to change.</strong></p>
+</blockquote>
+<p>我还是义无反顾，抱着既然走到这一步。就继续走下去的信息，走了下去。</p>
+<p>事情从这个时候似乎开始柳暗花明了，很快，我写了一个脚本，找到哪些Threads的URL是错误的，然后<code>update</code>它们（提示：<strong>下面这段脚本只是为了说明我如何“尝试”解决问题，千万不要指望它能解决问题</strong>）：</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">disqusapi</span> <span class="kn">import</span> <span class="n">DisqusAPI</span>
+
+<span class="n">secret_key</span> <span class="o">=</span> <span class="s1">&#39;your_secret_key&#39;</span>
+<span class="n">public_key</span> <span class="o">=</span> <span class="s1">&#39;your_public_key&#39;</span>
+<span class="n">token</span> <span class="o">=</span> <span class="s1">&#39;your_token&#39;</span>
+
+<span class="n">wrong_url</span> <span class="o">=</span> <span class="s1">&#39;localhost:8000&#39;</span>
+
+<span class="n">disqus</span> <span class="o">=</span> <span class="n">DisqusAPI</span><span class="p">(</span><span class="n">secret_key</span><span class="p">,</span> <span class="n">public_key</span><span class="p">)</span>
+
+<span class="c1"># perhaps you should use a Paginator</span>
+<span class="n">threads</span> <span class="o">=</span> <span class="n">disqus</span><span class="o">.</span><span class="n">threads</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">forum</span><span class="o">=</span><span class="s1">&#39;your_site&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+    <span class="n">link</span> <span class="o">=</span> <span class="n">thread</span><span class="p">[</span><span class="s1">&#39;link&#39;</span><span class="p">]</span>
+    <span class="k">print</span> <span class="n">link</span>
+    <span class="k">if</span> <span class="n">link</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">link</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">wrong_url</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">link</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">wrong_url</span><span class="p">,</span> <span class="s1">&#39;blog.imley.net&#39;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">disqus</span><span class="o">.</span><span class="n">threads</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">thread</span><span class="o">=</span><span class="n">thread</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">],</span>
+                                           <span class="n">url</span><span class="o">=</span><span class="n">link</span><span class="p">,</span>
+                                           <span class="n">access_token</span><span class="o">=</span><span class="n">token</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s2">&quot;id:</span><span class="si">%s</span><span class="s2"> now with url:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">],</span>
+                                             <span class="n">result</span><span class="p">[</span><span class="s1">&#39;link&#39;</span><span class="p">])</span>
+        <span class="k">except</span><span class="p">(</span><span class="ne">Exception</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="n">e</span>
+</pre></div>
+
+
+<p>因为我十分怀疑自己对DISQUS API的理解，所以我打印了处理结果。结果我<strong>欣喜</strong>地发现，API返回回来的URL地址正确了！</p>
+<p>但是我还是十分怀疑我是不是调用错了API，于是我再用API查了一次。结果刚刚更新的<code>link</code>字段，还是令人憋屈的<code>localhost:8000</code>打头的地址——我还是以为有延时，于是等了一天——一天以后，我再次用API去查，还尼玛是<code>localhost:8000</code>。于是，我的第二轮，宣告尝试。</p>
+<p>这一轮，最让我感觉到憋屈的是。尼玛要不就别给我返回，咋返回了期望的response还不给人家处理。不过DISQUS也可以说，这个页面上头一个大大的告示，就是告诉你这个API方法不可靠嘛~</p>
+<h2>解决问题</h2>
+<h3>能解决吗</h3>
+<p>我几乎快要放弃了，但每每欲放弃，不爽之情油然而生。于是我只能硬着头皮弄下去了，在这么多次尝试无果以后，我终于开始怀疑——<em>“这个URL字段是不是能改”</em>了，于是我又去DISQUS的官方帮助里头找，终于，让我找到了<a href="http://help.disqus.com/customer/portal/articles/735170-how-can-i-update-discussion-urls" title="how to update disqus url">这个页面</a>，上头说到：</p>
+<blockquote>
+<p>Thread URLs cannot be updated by passing <code>disqus_url</code> after a thread has been created. <code>disqus_url</code> can only be set once, upon thread creation.</p>
+</blockquote>
+<p>尼玛啊~~根本就不能改啊！尼玛...尼玛怎么就不在<code>Threds-&gt;update</code>的<a href="http://disqus.com/api/docs/threads/update/" title="DISQUS thread update api">API页面</a>稍微提一下呢，尼玛真是浪费感情啊！</p>
+<p>于是，这个问题终于被我最终判定为不可解决了，我几乎感觉不会再爱了。</p>
+<p><em>P.S. 这个问题也不是完全无解，你可以把文章链接改了，重新导入，或者迁移一次threads，但是我情感上真的接受不了</em></p>
+<h3>问题的源头</h3>
+<p>如果这个问题真的不能解决，那么，我还能做的，就只有预防它了。所以，我终于开始仔细思考造成这个问题的原因了。</p>
+<p>找啊找啊找朋友，找到一个好朋友，终于让我找到了这个问题的<a href="http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus-url" title="DISQUS对初始化一个Threads的各个变量的解释">官方解释</a>，原来，在threads被初始化的时候<code>disqus_url</code>这个参数被设置了，而且不会了。而这个参数如果没有被在页面中显式地声明，那么就会通过<code>window.location.href</code>获取。</p>
+<p>就算再不熟悉js，我也知道了，这就是<strong>万恶之源</strong>啊。</p>
+<p><em>回头想想，为啥讨论这个问题的人少，大概是大家不会在本地预览一下博客，而是直接上传到服务器吧。</em></p>
+<h3>避免问题</h3>
+<p>既然问题的原因一清二楚了，那么剩下的事情就好办了，看了一下Pelican的代码，找到主题对应DISQUS threads调用的这段API，然后一顿修改，测试，问题解决了，人民群众表示情绪很稳定。</p>
+<p>最后，抱着回馈大众的指导思想，我将自己写的三行代码commit，并且提交了生平第一个<a href="https://github.com/getpelican/pelican/pull/669" title="我提交的Pull Request">pull request</a>。不过事情过去这么多天了，大家一点反应也没有，大概是我的英文太烂，抑或是这个实现实在是太暴力了…</p>
+<h3>回头想想</h3>
+<p>现在想想，如果我一开始就对造成问题的原因寻根问底，也许就不用走这么多弯路，浪费这么多感情了。归根结底，还是解决问题的态度不端正啊。</p>
+<h2>后记</h2>
+<p>我之所以会花这么长的时间，为这个根本不复杂的问题，写这么一篇日志，只是因为，<strong>我用过情</strong>。</p>
+  </div>
+
+  <p class="permalink"><i class="fa fa-link" aria-hidden="true"></i> Permalink to this post: <a title="吐槽一下DISQUS的thread链接错误问题"href="http://blog.imley.net/2013/01/03/disqus-thread-url-issue/">http://blog.imley.net/2013/01/03/disqus-thread-url-issue/</a></p>
+</article>
+
+<section id="entry-comments">
+  <h1><i class="fa fa-comments" aria-hidden="true"></i> Comments</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "2013/01/03/disqus-thread-url-issue/";
+    var disqus_url = "http://blog.imley.net/2013/01/03/disqus-thread-url-issue/";
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://imley.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</section>
+    </div>
+    <div class="col-xs-12 col-md-1"></div>
+
+  </div>
+
+  <footer id="footer" class="row">
+  <div class="col-md-3">
+  <p><i class="fa fa-gears" aria-hidden="true"></i> Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p><i class="fa fa-asterisk" aria-hidden="true"></i> This theme <em>April Jane</em> is by <a href="http://blog.imley.net/2013/02/20/april-jane/">me</a></p>
+  </div>
+  <section class="col-md-6">
+  <ul class="list-inline">
+    <i class="fa fa-terminal"> Blogrool: </i>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://www.cnblogs.com/haippy/">海平同学</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://python.org">Python.org</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://jinja.pocoo.org">Jinja2</a>
+    </li>
+  </section>
+  </footer>
+</section>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8371634-14', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

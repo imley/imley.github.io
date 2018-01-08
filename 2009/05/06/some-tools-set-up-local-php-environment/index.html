@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>推荐几个本地快速搭建php运行环境的工具 | Ley's blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/d1e6a92d41.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="http://blog.imley.net/theme/css/main.css" type="text/css" />
+  <link href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ley's blog Atom Feed" />
+ 
+</head>
+<body id="index">
+<section id="wrapper" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blog.imley.net/" title="后知后觉">
+          Ley's blog
+        </a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="header-navbar-collpase">
+      <ul class="nav navbar-nav">
+            <li><a href="http://blog.imley.net/about">关于</a></li>
+            <li><a href="http://blog.imley.net/msg-board">留言版</a></li>
+          <li><a href="http://blog.imley.net/archives.html">Archives</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="http://blog.imley.net/category/chao-xi-zuo-wen.html">抄袭作文</a></li>
+              <li class="active"><a href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></li>
+              <li><a href="http://blog.imley.net/category/xiao-xue-zuo-wen.html">小学作文</a></li>
+              <li><a href="http://blog.imley.net/category/za-wen.html">杂文</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/imley">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weibo.com/imley">
+            <i class="fa fa-weibo" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+<aside id="sidebar" class="col-xs-12 col-md-3">
+<!--Left Blank-->
+</aside>
+    <div id="content" class="col-xs-12 col-md-8">
+<article class="entry-content"> 
+  <header>
+    <h1 class="entry-title">推荐几个本地快速搭建php运行环境的工具</h1>
+<div class="post-info">
+  <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="entry-date"> 2009-05-06 Wednesday</span>, <i class="fa fa-user-circle" aria-hidden="true"></i> <a class="author" href="http://blog.imley.net/author/ley.html">Ley</a>, <i class="fa fa-folder-o" aria-hidden="true"></i> <a class="entry-cat" href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></p>
+  </p> 
+<i class="fa fa-tags"></i><span class="entry-tags">  <a href="http://blog.imley.net/tag/apache">apache</a>   <a href="http://blog.imley.net/tag/php">php</a>  </span>
+</div><!-- /.post-info -->  </header>
+
+  <div class="entry-content">
+    <p><img alt="" src="http://lh6.ggpht.com/_R9Ztc0cXeZc/SgDmQgX_GUI/AAAAAAAAAEk/Ilw8NKdS4zY/s400/php-logo.jpg"></p>
+<p>虽然本人接触<a href="http://cn.php.net/">php</a>已经很久，但是确实没有学到太多东西，因为每次都是断断续续的，也是因为这种断断续续，让我每次都要重新在电脑里头搭建一个php环境。但是，真正要让一个php环境搭建起来，如果逐个安装，手动配置的话，那绝对是相当的麻烦（不过我也保证你绝对会学到很多的东西，尽管有些东西是后知后觉的），所以一般来说，推荐使用一些快速搭建php环境的套件。</p>
+<p>下面，就结合我的“心路历程”，来推荐几款这样的软件吧：<!--more--></p>
+<p><strong>1. Xammp</strong></p>
+<p><strong><img alt="" src="http://www.apachefriends.org/img/xampp-logo-new.gif" title="Xammp"></p>
+<p></strong></p>
+<p>很老牌的php搭建套件，立足于普及apache，让各们知道apache是很强大，也是很友好的。按其官方网站的说法，“XAMPP
+是一个易于安装且包含 MySQL、PHP 和 Perl 的 Apache 发行版。XAMPP
+的确非常容易安装和使用：只需下载，解压缩，启动即可。”，看起来是很吸引人了，我第一次搭建php环境的时候也是用的这个，但是现在已经不记得具体怎样了。</p>
+<p>在查了一下资料以后，发现这个软件是相当的强大的。可以快速安装配置，既有GUI图形界面，又可以使用命令行批处理快速实现。而且，最为重要的是，这个软件既有Windows的版本，也有Linux的版本，甚至是Mac,
+Solaris的版本，而且都是一样的好用，至于缺点，可能不是中文原生的，英文不好的可能要找一下<a href="http://www.google.cn/search?q=xammp%E4%B8%AD%E6%96%87%E7%89%88&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:zh-CN:official&amp;client=firefox-a">汉化版</a>。</p>
+<p>这里给出这个软件的官网吧，上面有详细的配置说明：[http://www.apachefriends.org/zh_cn/xampp.html][]</p>
+<p><strong>2. PhpStudy</strong></p>
+<p><strong><img alt="" src="http://www.greendown.cn/uploadfiles/2007-11-28/20071128_174704_329.gif" title="Phpstudy"></p>
+<p></strong></p>
+<p>这是国内一位童鞋做的php环境套件，集成Apache+PHP+MySQL+phpMyAdmin+ZendOptimizer，一次性安装，无须配置即可使用，该程序不仅包括PHP调试环境，还包括了开发工具、开发手册等。在这里提到是因为我曾经用过很长的一段时间，你可以打开他的一个控制台，会在任务栏停放一个小图标，可以通过其图形界面实现很多功能。真的是很简单易用，但是，作者好像在开发到1.75版以后，就没有再次开发了。而且至少在我的机器上会有这样的缺点，那就是运行wordpress的执行效率特别低。所以如果只是简单学学php的话，还是可以用这款软件的。</p>
+<p>给出一个作者博客的链接：<a href="http://blog.chinaunix.net/u/19869/index.html">http://blog.chinaunix.net/u/19869/index.html</a></p>
+<p>​3. PHPnow</p>
+<p><img alt="" src="http://phpnow.org/guide/1.png" title="phpnow"></p>
+<p>这个也是我现在电脑上用的php套件包，是国人自己的作品，包括<a href="http://httpd.apache.org/">Apache</a>-2.0.63
+/ 2.2.11, <a href="http://cn.php.net/">PHP</a>-5.2.9-2, <a href="http://www.mysql.com/">MySQL</a>-5.0.77 / 5.1.33, <a href="http://zend.com/products/zend_optimizer">Zend
+Optimizer</a>-3.3.3, <a href="http://www.phpmyadmin.net/">phpMyAdmin</a>-3.1.3.1, * eAccelerator
+0.9.5.3(默认不启动).</p>
+<p>这个软件的安装做得很简洁，解压（必须是英文目录）了以后就基本是按照命令行提示一步一步走，后期的配置也是通过命令行界面执行几个批处理文件实现的，还是很简洁，个人感觉虽然简洁，但确实非常好用，也很稳定，没有发现什么兼容性的问题。值得一赞的是，他提供了<a href="http://phpnow.org/pp.html">快速配置多个虚拟主机</a>的选项，也是因为这个，我才真正知道了原来虚拟主机是这样弄的（汗...）</p>
+<p>同样，给出官网的链接：<a href="http://phpnow.org/index.html">http://phpnow.org/index.html</a></p>
+<p>上面有软件的<a href="http://phpnow.org/download.html">下载</a>，以及<a href="http://phpnow.org/docs.html">比较详细的文档</a>。不过，文档中的软件版本可能和现在不一样，最好还是下下来，跟着走走，就基本会用了(Vista下建议把UAC关了，不然可能会出错)。</p>
+<p>嗯，也就这么多了，希望对各位有帮助，别忘了，配置好了以后，赶紧装个<a href="http://www.wpcng.com/2009/02/wordpress-271-chinese-version-released/">wordpress</a>试试，或者玩玩<a href="http://lucifr.com/2009/05/02/buddypress-10-released/">刚出来正式版</a>的<a href="http://buddypress.org/">BuddyPress</a>。</p>
+<p>本文完。</p>
+<p><em>本文来自<a href="http://imley.net" title="Ley's Blog">Ley's Blog</a>，转载请注明出处。</em></p>
+  </div>
+
+  <p class="permalink"><i class="fa fa-link" aria-hidden="true"></i> Permalink to this post: <a title="推荐几个本地快速搭建php运行环境的工具"href="http://blog.imley.net/2009/05/06/some-tools-set-up-local-php-environment/">http://blog.imley.net/2009/05/06/some-tools-set-up-local-php-environment/</a></p>
+</article>
+
+<section id="entry-comments">
+  <h1><i class="fa fa-comments" aria-hidden="true"></i> Comments</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "2009/05/06/some-tools-set-up-local-php-environment/";
+    var disqus_url = "http://blog.imley.net/2009/05/06/some-tools-set-up-local-php-environment/";
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://imley.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</section>
+    </div>
+    <div class="col-xs-12 col-md-1"></div>
+
+  </div>
+
+  <footer id="footer" class="row">
+  <div class="col-md-3">
+  <p><i class="fa fa-gears" aria-hidden="true"></i> Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p><i class="fa fa-asterisk" aria-hidden="true"></i> This theme <em>April Jane</em> is by <a href="http://blog.imley.net/2013/02/20/april-jane/">me</a></p>
+  </div>
+  <section class="col-md-6">
+  <ul class="list-inline">
+    <i class="fa fa-terminal"> Blogrool: </i>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://www.cnblogs.com/haippy/">海平同学</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://python.org">Python.org</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://jinja.pocoo.org">Jinja2</a>
+    </li>
+  </section>
+  </footer>
+</section>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8371634-14', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

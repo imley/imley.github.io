@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>域名使用经验谈 | Ley's blog</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/d1e6a92d41.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="http://blog.imley.net/theme/css/main.css" type="text/css" />
+  <link href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ley's blog Atom Feed" />
+ 
+</head>
+<body id="index">
+<section id="wrapper" class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blog.imley.net/" title="后知后觉">
+          Ley's blog
+        </a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="header-navbar-collpase">
+      <ul class="nav navbar-nav">
+            <li><a href="http://blog.imley.net/about">关于</a></li>
+            <li><a href="http://blog.imley.net/msg-board">留言版</a></li>
+          <li><a href="http://blog.imley.net/archives.html">Archives</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="http://blog.imley.net/category/chao-xi-zuo-wen.html">抄袭作文</a></li>
+              <li class="active"><a href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></li>
+              <li><a href="http://blog.imley.net/category/xiao-xue-zuo-wen.html">小学作文</a></li>
+              <li><a href="http://blog.imley.net/category/za-wen.html">杂文</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://blog.imley.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/imley">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://weibo.com/imley">
+            <i class="fa fa-weibo" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row">
+<aside id="sidebar" class="col-xs-12 col-md-3">
+<!--Left Blank-->
+</aside>
+    <div id="content" class="col-xs-12 col-md-8">
+<article class="entry-content"> 
+  <header>
+    <h1 class="entry-title">域名使用经验谈</h1>
+<div class="post-info">
+  <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="entry-date"> 2009-04-23 Thursday</span>, <i class="fa fa-user-circle" aria-hidden="true"></i> <a class="author" href="http://blog.imley.net/author/ley.html">Ley</a>, <i class="fa fa-folder-o" aria-hidden="true"></i> <a class="entry-cat" href="http://blog.imley.net/category/shuo-ming-wen.html">说明文</a></p>
+  </p> 
+<i class="fa fa-tags"></i><span class="entry-tags">  <a href="http://blog.imley.net/tag/a记录">a记录</a>   <a href="http://blog.imley.net/tag/cname">cname</a>   <a href="http://blog.imley.net/tag/dns">dns</a>   <a href="http://blog.imley.net/tag/godaddy">godaddy</a>   <a href="http://blog.imley.net/tag/动态域名">动态域名</a>   <a href="http://blog.imley.net/tag/域名">域名</a>   <a href="http://blog.imley.net/tag/域名解析">域名解析</a>  </span>
+</div><!-- /.post-info -->  </header>
+
+  <div class="entry-content">
+    <p>最近心血来潮搭博客，不过不管是<a href="http://phpnow.org/">用自己的机器当服务器</a>，还是把网站放在别人的主机上，要让别人访问到你的网站，一个好记的域名是必不可少的，除非，你打算别人通过输入一段冗长的IP来访问到你的站点。</p>
+<p>另外，有了域名的另外一个好处就是，如果因为种种原因你更换了服务器，通过修改域名解析，用户还是能照常访问你的站点。</p>
+<p>域名的相关科普知识我就不多介绍了，可以参看<a href="http://zh.wikIPedia.org/wiki/域名">wikipedia的相关解释</a>;</p>
+<p>下面，就一些域名申请的东西谈谈自己的经验吧：</p>
+<h3>1. 域名的申请：</h3>
+</p>
+
+<h5>a. 先说免费的吧：</h5>
+<p></p>
+免费的域名是有很多地方可以申请的，但是免费的基本都是二级域名（要是知道哪个一级域名免费了，请告诉我）。</p>
+<p>免费域名申请的地方虽然很多，但是，个个提供的服务的内容是不一样的。国内著名的免费域名有<a href="http://www.oray.cn/">花生壳</a>，<a href="http://www.3322.org">3322.org</a>等，这些都可以设置域名的动态解析（详见2.
+域名的解析），其中3322还能有很基本的静态解析功能。</p>
+<p>这里重点推荐一个国外的免费二级域名申请的网站："<a href="http://co.cc">co.cc</a>"；在这个网站你能够免费申请到一个"*.co.cc"的二级域名，并且能拥有域名的
+"full control"，就是可以设置域名的具体解析。"full
+control"就意味着，只要您会用，前面提到的几个国内网站的免费域名能实现的功能，它都能实现，而且不加任何限制。</p>
+<p>但是天下是没有太免费的午餐的，"co.cc"的域名虽然可以"full
+control"，但是只能"free for just one
+year"，也就是第二年以后，如果你还想要使用这个域名，就要向他们付费了。具体费用，本人没有研究，应该是以美元计算。<!--more--></p>
+<h5>b. 再说说收费的：</h5>
+<p></p>
+既然一个免费的域名那么麻烦，为何不干脆买一个收费的域名呢？所以接下来谈谈收费域名的申请。</p>
+<p>当然，二级域名也有收费的，像那个"co.cc"公司，就会把一些比较热门的域名，如"games.co.cc"挂上一个几美元的价格出售。不过，我这里主要谈谈顶极域名的购买。</p>
+<p>首先，买什么后缀的域名：</p>
+<p>现在域名的后缀很多，比较主流的有".com, .net, .org, .cn,
+.info"等等，具体买什么就看个人喜好和自己的钱包了。</p>
+<p>在买域名前，你可以到"oray.cn"先去查查，看你的域名有没有被注册。如果没有注册，你就可以选一个域名代理商注册自己的域名了。</p>
+<p>这里，不太推荐找国内的域名代理，也不推荐申请".cn"的域名。因为国内域名代理要么要价太高，要么服务质量参差不齐，没法保证。而不推
+荐".cn"域名的原因，一是.cn的域名本来就只允许单位组织注册，不允许个人注册，没有保障。二是国内的域名服务商法律素质不高，突然给你把域名停了
+也不是不可能的事，再说，它也不便宜。</p>
+<p>然后，在哪儿买：</p>
+<p>这里，推荐一个全球巨大的域名商"<a href="http://godaddy.com">godaddy.com</a>"，其代理级别非常高，服务有保证，而且，在那里买域名，还送一个免费的虚拟主机（不过有广告）。另外，就算把人家价格的美元换成人民币，还是很便宜。</p>
+<p>另外，在Godaddy买域名是可以使用优惠码的，只要google一下，因为那些码是可以重复使用的，用了优惠码以后，一般可以做到".com"域名7美元左右一年。这里推荐一个网站：<a href="http://godaddy.idcspy.com">http://godaddy.idcspy.com</a>;
+上面几乎有所以你在Godaddy买域名需要了解的知识。</p>
+<p>其实，如果你嫌麻烦的话，可以去<a href="http://www.taobao.com">淘宝</a>，输入godaddy域名，各种价格，各种后缀的域名都有人帮你买了，你所要做的，只是像买一件衣服一样，拍下这个宝贝。（不过，最好是先注册一个用户，让店主把域名注册到你的账户上，或者是给店主提供你的个人信息，让他给你帮注册）。</p>
+<p>这里，也郑重推荐一个现在Godaddy卖得很便宜的域名：".info"，貌似是为了做推广，现在这个后缀的顶级域名只卖0.99美元，在淘宝上
+只要
+7.5人民币就可以买到一个了，比如说我的这个"imley.info"。不过续费还是原价，一年7.9美元左右，其实也不贵（少吃顿好的，一年就有
+了）。</p>
+<p>(PS:
+后来得知，<a href="http://seo.g2soft.net/2008/09/08/domain-choice.html" title="网站之域名选择">.info的域名和cn域名一样<strong>垃圾</strong></a>，因为其<strong>搜索引擎的权值特别低</strong>，所以最好还是多割点肉，像我一样，重新来个.net或者.com的)</p>
+<h3>2. 域名的解析：</h3>
+<p></p>
+选择了域名之后，就要讲域名的解析了，这里分动态域名和静态解析讲讲（适合有一定的技术基础的人看）：</p>
+<h5>a. 动态解析：</h5>
+<p></p>
+国内很多免费二级域名的提供商都会提供免费的动态域名解析服务。具体就是到它们的网站按他们的提示下载一个客户端，然后每次运行的时候，软件就会自
+动把域名解析到你机器的IP上。解析成功后，在命令提示符下输入"ping
+yourname.example"(其中youname.example是指你的域名)，ping到的应该就是你的IP了。</p>
+<p>虽然各个商家提供的动态域名软件都不一样，但是，操作都大同小异。</p>
+<p>但是这样只能把域名解析到你自己的IP上，要实现更强大的域名控制，就得进行更多的"full
+control"了，这就涉及到静态解析（传统的解析）。</p>
+<h5>b. 静态解析:</h5>
+<p></p>
+一般来说，比较正规的域名服务商都会给你一个比较完整的域名控制面板。你可以有两种选择：</p>
+<p>一是直接使用域名服务商提供的域名解析功能，以Godaddy为例，你可以使用他们提供的功能<a href="http://godaddy.idcspy.com/godaddy/domain">进行各种域名解析设置</a>，可以实现各种功能。</p>
+<p>但是这样也有缺点，因为他们的域名服务器在国外，线路对国内的用户可能不够优化，也就是你解析的速度可能不够快。另外，也没有针对国内网络状况提供的个性服务。</p>
+<p>这里，我推荐使用"<a href="http://dnspod.com">dnspod.com</a>"(国内的免费域名解析商)提供的域名解析服务。要把解析服务转移到别他们服务器上，首先你得注册一个
+dnspod
+的账号，（以在Godaddy买的域名为例），再在Godaddy的域名管理中将dns服务器设置为dnspod的服务器（"ns1-
+ns6.dnspod.net",
+总共六个）。然后，就可以在dnspod的控制面板中设置你的域名解析了（如下图）。</p>
+<p><a href="http://edu.imley.net/wp-content/uploads/2009/04/cpature2.jpg"><img alt="undefined" src="http://lh5.ggpht.com/_R9Ztc0cXeZc/SfBmNU9vLsI/AAAAAAAAACk/IchXbW6k39I/s512/cpature2.jpg"></p>
+<p></a></p>
+<p>以dnspod为例，说一下自己对各个参数的理解：</p>
+<p><strong><em>主机记录：</em></strong>也就是你的域名前面的那个字符串，如果留空，表示是顶级域名的解析，系统会显示一个@号。通过这个选项，你
+可以对你的顶级域名不同的前缀设置不同的解析，以我的设置为例，我就把顶级域名（imley.info）和www域名(www.imley.info)解
+析到了海外服务器的IP上，而把edu前缀的域名(edu.imely.info)解析到了自己电脑的IP上。另外，你还可以设置解析别的子域名，如
+mail, ftp等域名的解析。</p>
+<p><strong><em>记录类型：</em></strong> 这里面分为：</p>
+<p><em>A解析</em>：直接指定IP地址；</p>
+<p><em>CNAME解析</em>：输入一个域名，从这个域名继承解析，所以CNAME解析又叫继承解析，如输入google.cn，那么你的域名就会解析到google的服务器上（举例，未试验过）；</p>
+<p><em>MX解析</em>：和邮件服务有关；</p>
+<p><em>AAAA解析</em>：IPV6解析；</p>
+<p><em>URL</em>：URL转发，也就是把你的域名转向另外一个地址，可以具体到网页（如http://www.abc.com/terms.html）.</p>
+<p><strong><em>线路类型：</em></strong>这是dnspod比较有特色的服务，可以根据不同的用户访问线路解析不同的地址。如：我可以让教育网的用户在输入imley.info的时候到我的机器上，让公网用户则访问海外服务器。</p>
+<p><strong><em>记录值：</em></strong> IP地址或者域名，就是你的设置值。</p>
+<p><strong><em>MX优先级：</em></strong>仅在设置MX解析的时候有效。</p>
+<p><strong><em>TTL:</em></strong>这里有一篇写得很好的解释TTL的文章<a href="http://baike.baidu.com/view/65586.html?fromTaglist">http://baike.baidu.com/view/65586.html?fromTaglist</a>；</p>
+<h3>3. 检测是否成功：</h3>
+<p></p>
+在完成这些步骤以后，你就可以在命令行中输入自己设置的域名，ping一下它，看是否能够正确解析：</p>
+<p>不过，一般来说，你设置的解析都不能立刻生效。因为要等你的解析映射到整个网络要一定时间，在不同的网络接入商那儿生效的时间也不一样。不过，动态域名的解析都是即时生效的。</p>
+<h3>4. 如果一切顺利，你就拥有一个你控制的域名了，不过怎么用它，就由你决定了。</h3>
+<p></p>
+<em>本文来自<a href="http://imley.net" title="Ley's Blog">Ley's Blog</a>，转载请注明出处。</em></p>
+  </div>
+
+  <p class="permalink"><i class="fa fa-link" aria-hidden="true"></i> Permalink to this post: <a title="域名使用经验谈"href="http://blog.imley.net/2009/04/23/something-about-domain-name/">http://blog.imley.net/2009/04/23/something-about-domain-name/</a></p>
+</article>
+
+<section id="entry-comments">
+  <h1><i class="fa fa-comments" aria-hidden="true"></i> Comments</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "2009/04/23/something-about-domain-name/";
+    var disqus_url = "http://blog.imley.net/2009/04/23/something-about-domain-name/";
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://imley.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</section>
+    </div>
+    <div class="col-xs-12 col-md-1"></div>
+
+  </div>
+
+  <footer id="footer" class="row">
+  <div class="col-md-3">
+  <p><i class="fa fa-gears" aria-hidden="true"></i> Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p><i class="fa fa-asterisk" aria-hidden="true"></i> This theme <em>April Jane</em> is by <a href="http://blog.imley.net/2013/02/20/april-jane/">me</a></p>
+  </div>
+  <section class="col-md-6">
+  <ul class="list-inline">
+    <i class="fa fa-terminal"> Blogrool: </i>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://www.cnblogs.com/haippy/">海平同学</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://python.org">Python.org</a>
+    </li>
+    <li>
+      <i class="fa fa-external-link"></i> <a href="http://jinja.pocoo.org">Jinja2</a>
+    </li>
+  </section>
+  </footer>
+</section>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8371634-14', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
