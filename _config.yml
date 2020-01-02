@@ -26,7 +26,7 @@ github_username: imley
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 permalink: /:year/:month/:day/:title/
