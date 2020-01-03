@@ -29,7 +29,6 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 permalink: /:year/:month/:day/:title/
-paginate: 5 # amount of posts to show
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
