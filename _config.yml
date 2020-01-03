@@ -24,7 +24,6 @@ github_username: imley
 
 # Build settings
 markdown: kramdown
-remote_theme: minimal-mistakes-jekyll
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
