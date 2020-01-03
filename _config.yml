@@ -25,6 +25,8 @@ github_username: imley
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
+paginate: 10
+google_analytics: UA-8371634-14
 
 plugins:
   - jekyll-feed
