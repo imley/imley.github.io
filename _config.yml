@@ -24,7 +24,8 @@ github_username: imley
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-minimal
+
 plugins:
   - jekyll-feed
 permalink: /:year/:month/:day/:title/
@@ -41,15 +42,3 @@ paginate: 5 # amount of posts to show
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: true
-      share: true
-      related: true
