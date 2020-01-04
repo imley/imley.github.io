@@ -1,4 +1,5 @@
 .jekyll-cache/
 .ruby-version
 _site/
+*.DS_Store
 
