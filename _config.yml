@@ -16,7 +16,7 @@
 title: Lei's blog
 email: ley@imley.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi there, this is Lei, this is my blog.
+  后知后觉
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: imley 
