@@ -6,7 +6,7 @@ category: 小学作文
 slug: sold-myself
 tags: 找工作, Amazon, Google, Microsoft, BGC, Yahoo, 阿里, 百度
 ---
-![Dream](http://img5.douban.com/lpic/s4682959.jpg "追梦赤子心")
+![Dream](https://img3.doubanio.com/view/subject/m/public/s26743139.jpg "追梦赤子心")
 
 上周五去准东家签了约，算是给自己不算漫长的找工作经历画上了句号。下周开始磨毕业论文了，如果论文顺利的话，明年3月份我就算是正式结束我近20年的学生生涯，从此告别寒暑假期，踏上掐着指头拼年假的道路了。
 
