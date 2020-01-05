@@ -6,8 +6,15 @@ category: Photos
 slug: no-parking
 tags: photo
 ---
-![No Parking](/assets/photos/20-01-03-mini.jpg)
-> @ Thomas St & Terry Ave N, Seattle
+
+{% capture fig_img %}
+![No Parking]({{ "/assets/photos/20-01-03-mini.jpg" | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>@ Thomas St & Terry Ave N, Seattle</figcaption>
+</figure>
 
 早上西雅图迎来了久违的太阳，这件事我直到看到别人的朋友圈才意识到。
 
