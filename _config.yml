@@ -20,16 +20,27 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: imley 
-github_username: imley 
+github_username: imley
+minimal_mistakes_skin: default
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+remote_theme: mmistakes/minimal-mistakes
+
+# Outputting
 paginate: 10
 google_analytics: UA-8371634-14
 
+include:
+  - _pages
+
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 permalink: /:year/:month/:day/:title/
 
 # Exclude from processing.
@@ -43,3 +54,29 @@ permalink: /:year/:month/:day/:title/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "imley"
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
