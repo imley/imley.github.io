@@ -23,6 +23,14 @@ twitter_username: imley
 github_username: imley
 minimal_mistakes_skin: default
 
+author:
+  name   : "LJ"
+  bio    : "后知后觉"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/imley"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -80,3 +88,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

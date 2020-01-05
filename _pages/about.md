@@ -3,6 +3,7 @@ title: 关于
 date: 2009-04-18 08:44
 author: Ley
 slug: about
+permalink: /about/
 ---
 
 [**![][head]**][feed]
