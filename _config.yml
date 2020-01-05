@@ -17,7 +17,7 @@ title: Lei's blog
 email: ley@imley.net
 subtitle: 后知后觉
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.imley.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: imley 
 github_username: imley
 minimal_mistakes_skin: default
